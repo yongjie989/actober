@@ -77,11 +77,20 @@
 			<canvas id="actober_painter"></canvas>
 		</div>
 	</div>
-	<div class="empty"></div>
-	<div id="footer">
-	 footer
+</div>
+<!-- upload images -->
+<div id="upload_image_window">
+	<div class="window_bar">
+	    <span class="window_title">上傳照片</span>
+		<img src="tpl/images/icons/window-close.png" class="window_close_button">
 	</div>
-
+	<div id="custom_upload_file_list">
+		<div>
+			<input type="file" name="custom_upload_files[]" />
+			<img src="tpl/images/icons/add.png" onclick="add_more_upload_field()">
+		</div>
+	</div>
+	<span id="custom_upload_button" class="button_style">上傳</span>
 </div>
 <script type="text/javascript" src="tpl/js/actober.js"></script>
 <script type="text/javascript" src="tpl/js/actober-ui.js"></script>

@@ -13,3 +13,8 @@ function get_tshirt_color(userid, productid){
 		}
 	});
 };
+
+function add_more_upload_field(){
+	var more_field = '<div><input type="file" name="custom_upload_files[]" /></div>';
+	$("#custom_upload_file_list").append(more_field);
+};
