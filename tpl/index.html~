@@ -1,16 +1,16 @@
-<?php if(!class_exists('raintpl')){exit;}?><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8" />
 <title>Actober</title>
-<script type="text/javascript" src="tpl/js/jquery-1.9.1.js"></script>
-<script type="text/javascript" src="tpl/js/jquery-ui-1.10.3.custom.min.js"></script>
-<script type="text/javascript" src="tpl/js/fabric.min.js" ></script>
-<script type="text/javascript" src="tpl/js/modernizr.custom.50476.js"></script>
-<script type="text/javascript" src="tpl/js/url.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+<script type="text/javascript" src="js/fabric.min.js" ></script>
+<script type="text/javascript" src="js/modernizr.custom.50476.js"></script>
+<script type="text/javascript" src="js/url.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="tpl/css/sunny/jquery-ui-1.10.3.custom.min.css" />
-<link rel="stylesheet" type="text/css" href="tpl/css/actober.css" />
+<link rel="stylesheet" type="text/css" href="css/sunny/jquery-ui-1.10.3.custom.min.css" />
+<link rel="stylesheet" type="text/css" href="css/actober.css" />
 
 </head>
 
@@ -19,13 +19,13 @@
 	<div id="header">
 		<span class="logo">
 			<!--
-			<img src="tpl/images/actober-logo.png" height="80">
+			<img src="images/actober-logo.png" height="80">
 			-->
 		</span>
 	</div>
 	<div id="design_block" align="center">
-		<div id="mascot_block" style="position:absolute;top:130px;">
-			<img src="tpl/images/actober-mascot.png" height="350">
+		<div id="mascot_block" style="position:absolute;top:320px;">
+			<img src="images/actober-mascot.png" height="350">
 		</div>
 		<div id="actober_desktop">
 			<div id="company_name">Actober Design</div>
@@ -85,20 +85,20 @@
 <div id="upload_image_window">
 	<div class="window_bar">
 	    <span class="window_title">上傳照片</span>
-		<img src="tpl/images/icons/window-close.png" class="window_close_button" onclick="close_upload_image_windows();">
+		<img src="images/icons/window-close.png" class="window_close_button" onclick="close_upload_image_windows();">
 	</div>
 	<div id="custom_upload_file_list">
 		<div>
 			<input type="file" name="custom_upload_files[]" />
-			<img src="tpl/images/icons/add.png" onclick="add_more_upload_field()">
+			<img src="images/icons/add.png" onclick="add_more_upload_field()">
 		</div>
 	</div>
 	<span id="custom_upload_button" class="button_style">上傳</span>
 	<br/>
 	一次最多上傳多張
 </div>
-<script type="text/javascript" src="tpl/js/actober.js"></script>
-<script type="text/javascript" src="tpl/js/actober-ui.js"></script>
+<script type="text/javascript" src="js/actober.js"></script>
+<script type="text/javascript" src="js/actober-ui.js"></script>
 </body>
 </html>
 

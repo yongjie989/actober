@@ -20,5 +20,5 @@ function add_more_upload_field(){
 };
 
 function close_upload_image_windows(){
-		$("#upload_image_window").hide();
+		$("#upload_image_window").close();
 };

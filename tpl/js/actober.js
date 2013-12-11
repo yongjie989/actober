@@ -19,14 +19,27 @@ $("div[class='canvas-container']").css({
 canvas.setWidth(500);
 canvas.setHeight(600);
 
-canvas.add(new fabric.Circle({ radius: 30, fill: '#f55', top: 100, left: 100 }));
 
+fabric.Image.fromURL('tpl/images/t-shirt-front.png', function (oImg) {
+	oImg.set('id',1);
+	oImg.set('isdelete','N');
+	oImg.set('left', 0);
+	oImg.set('top', 20);
+	oImg.set('selectable',false);
+	canvas.add(oImg);
+	canvas.renderAll();
+});  
+
+
+
+canvas.add(new fabric.Circle({ radius: 30, fill: '#f55', top: 100, left: 100 }));
 canvas.item(0).set({
 borderColor: 'gray',
 cornerColor: 'black',
 cornerSize: 6,
 transparentCorners: true
 });
+
 canvas.setActiveObject(canvas.item(0));
 canvas.item(0).lockUniScaling = true;
 canvas.item(0).hasRotatingPoint=false
