@@ -19,7 +19,7 @@ $("div[class='canvas-container']").css({
 canvas.setWidth(500);
 canvas.setHeight(600);
 
-
+/*
 fabric.Image.fromURL('tpl/images/t-shirt-front.png', function (oImg) {
 	oImg.set('id',1);
 	oImg.set('isdelete','N');
@@ -29,7 +29,7 @@ fabric.Image.fromURL('tpl/images/t-shirt-front.png', function (oImg) {
 	canvas.add(oImg);
 	canvas.renderAll();
 });  
-
+*/
 
 
 canvas.add(new fabric.Circle({ radius: 30, fill: '#f55', top: 100, left: 100 }));

@@ -101,6 +101,7 @@ input {
 	font-size: 12px;
 	background-color: orange;
 	cursor: pointer;
+	color: #383838;
 }
 
 .window_bar {
@@ -117,6 +118,30 @@ input {
 	float: right;
 	cursor: pointer;
 }
+.note {
+	position: absolute;
+	font-size: 10px;
+	color: green;
+	margin-top:20px;
+}
+.comment {
+	position: absolute;
+	font-size: 10px;
+	color: green;
+	margin-top:10px;
+	padding-left: 3px;
+}
+.line {
+	border-bottom: 1px solid #000000;
+	position: relative;
+	top: 30px;
+	width: 100%;
+}
 #add_more_upload_field { 
 	cursor: pointer;
+}
+
+#mascot_block {
+	position: absolute;
+	top: 130px;
 }

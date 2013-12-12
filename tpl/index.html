@@ -8,6 +8,7 @@
 <script type="text/javascript" src="js/fabric.min.js" ></script>
 <script type="text/javascript" src="js/modernizr.custom.50476.js"></script>
 <script type="text/javascript" src="js/url.min.js"></script>
+<script type="text/javascript" src="js/ajaxfileupload.js"></script>
 
 <link rel="stylesheet" type="text/css" href="css/sunny/jquery-ui-1.10.3.custom.min.css" />
 <link rel="stylesheet" type="text/css" href="css/actober.css" />
@@ -24,8 +25,8 @@
 		</span>
 	</div>
 	<div id="design_block" align="center">
-		<div id="mascot_block" style="position:absolute;top:130px;">
-			<img src="images/actober-mascot.png" height="350">
+		<div id="mascot_block">
+			<img src="images/actober-mascot.png" height="300">
 		</div>
 		<div id="actober_desktop">
 			<div id="company_name">Actober Design</div>
@@ -53,9 +54,12 @@
 					</div>
 					<h3>圖案</h3>
 					<div>
-						<p>
-						Mauris mauris ante, blandi
-						</p>
+						<div>
+							<span class="button_style" onclick="open_custom_upload_button()">上傳照片</span>
+							<span class="comment">(上傳自己喜歡的照片)</span>
+						</div>
+						<div class="line"></div>
+						<div id="my_images_list"></div>
 					</div>
 					<h3>上傳照片</h3>
 					<div>
@@ -82,20 +86,24 @@
 	</div>
 </div>
 <!-- upload images -->
-<div id="upload_image_window">
+<div id="upload_image_window" style="display:none;">
 	<div class="window_bar">
 	    <span class="window_title">上傳照片</span>
 		<img src="images/icons/window-close.png" class="window_close_button" onclick="close_upload_image_windows();">
 	</div>
+	<form name="form" action="" method="POST" enctype="multipart/form-data">
+	
 	<div id="custom_upload_file_list">
 		<div>
-			<input type="file" name="custom_upload_files[]" />
+			<input type="file" id="custom_upload_files_0" name="custom_upload_files_0" />
 			<img src="images/icons/add.png" onclick="add_more_upload_field()">
 		</div>
 	</div>
-	<span id="custom_upload_button" class="button_style">上傳</span>
+	<span id="custom_upload_button" class="button_style" onclick="process_custom_upload()">上傳</span>
 	<br/>
-	一次最多上傳多張
+	<span class="note">支援上傳多張照片，每次最多上傳5張。<br/>每張照片最多5MB，每次上傳總大小不能超過25MB。</span>
+	<img id="loading" src="images/loading.gif" style="display:none;position:relative;top:60px;">
+	</form>
 </div>
 <script type="text/javascript" src="js/actober.js"></script>
 <script type="text/javascript" src="js/actober-ui.js"></script>
