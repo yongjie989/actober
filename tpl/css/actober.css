@@ -10,13 +10,31 @@ html, body {
 	background-repeat: no-repeat; 
 }
 #header {
-	height: 33px;	
+	height: 33px;
+	float: right;
+	font-size: 12px;
+	padding-right: 100px;
+	padding-top:10px;
+}
+#header span{
+	color: #E56717;
+	border: 1px solid #dddddd;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 10px;
+	cursor: pointer;
+
 }
 .logo {
 	padding: 20px;
 }
 .empty {
 	padding: 10px;
+}
+.empty_header{
+	padding: 50px;
 }
 .function_button {
 	padding: 10px;
@@ -144,4 +162,13 @@ input {
 #mascot_block {
 	position: absolute;
 	top: 130px;
+}
+
+#actober_normal_desktop {
+	width: 500px;
+	height: 300px;
+	border: 10px solid #FFA62F;
+	text-align: left;
+	border-radius:15px;
+	background-color: #ffffff;
 }

@@ -95,7 +95,6 @@ if($_POST['act'] == 'process_custom_upload'){
 	$file_3 = $_FILES['custom_upload_files_3'];
 	$file_4 = $_FILES['custom_upload_files_4'];
 	
-	
 	if($userid && $productid && $painterid){
 		for($i=0;$i<5;$i++){
 			$f = ${'file_'. $i};

@@ -95,3 +95,10 @@ function open_custom_upload_button(){
 	open_upload_image_windows();
 	return false;
 };
+
+function open_page(page){
+	if(page != undefined){
+		window.location.href='actober_core.php?page='+page;
+	};
+	return false;
+};

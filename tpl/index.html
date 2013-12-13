@@ -54,18 +54,15 @@
 					</div>
 					<h3>圖案</h3>
 					<div>
+					</div>
+					<h3>上傳照片</h3>
+					<div>
 						<div>
 							<span class="button_style" onclick="open_custom_upload_button()">上傳照片</span>
 							<span class="comment">(上傳自己喜歡的照片)</span>
 						</div>
 						<div class="line"></div>
 						<div id="my_images_list"></div>
-					</div>
-					<h3>上傳照片</h3>
-					<div>
-						<p>
-						上傳自己的照片
-						</p>
 					</div>
 					<h3>字型</h3>
 					<div>
